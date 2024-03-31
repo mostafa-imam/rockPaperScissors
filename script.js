@@ -55,3 +55,22 @@ function playRound(playerSelection, computerSelection) {
 
 }
 
+/* create playGame() to play a 5-round rock-paper-scissors game */
+
+function playGame(round1, round2, round3, round4, round5) {
+
+    if (round1 + round2 + round3 + round4 + round5 == 0) {
+        alert("It's a tie!");
+        console.log("It's a tie!");
+    } else if (round1 + round2 + round3 + round4 + round5 > 0) {
+        alert("You Win The Game");
+        console.log("You Win The Game");
+    } else if (round1 + round2 + round3 + round4 + round5 < 0) {
+        alert("Game Over! You Suck!!");
+        console.log("Game Over! You suck!!");
+    }  else {
+        console.log("Come Back When You Want to Get Serious!");
+    }
+
+}
+
