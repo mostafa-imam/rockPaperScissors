@@ -1,3 +1,6 @@
+console.log("Welcome!");
+console.log("-------------");
+
 /* Create getComputerChoice() to return a random rock-paper-scissors value */
 
 function getComputerChoice() {
@@ -97,3 +100,5 @@ const round2 = playRound(playerSelection2, computerSelection2);
 const round3 = playRound(playerSelection3, computerSelection3);
 const round4 = playRound(playerSelection4, computerSelection4);
 const round5 = playRound(playerSelection5, computerSelection5);
+
+playGame(round1, round2, round3, round4, round5);
