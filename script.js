@@ -74,3 +74,26 @@ function playGame(round1, round2, round3, round4, round5) {
 
 }
 
+/* create 5 playerSelection constants for each round  */
+
+const playerSelection1 = prompt("rock, paper or scissors?").toLowerCase();
+const playerSelection2 = prompt("rock, paper or scissors?").toLowerCase();
+const playerSelection3 = prompt("rock, paper or scissors?").toLowerCase();
+const playerSelection4 = prompt("rock, paper or scissors?").toLowerCase();
+const playerSelection5 = prompt("rock, paper or scissors?").toLowerCase();
+
+/* create 5 computerSelection constants for each round */
+
+const computerSelection1 = getComputerChoice();
+const computerSelection2 = getComputerChoice();
+const computerSelection3 = getComputerChoice();
+const computerSelection4 = getComputerChoice();
+const computerSelection5 = getComputerChoice();
+
+/* create 5 rounds to be used as parameters in playGame() */
+
+const round1 = playRound(playerSelection1, computerSelection1);
+const round2 = playRound(playerSelection2, computerSelection2);
+const round3 = playRound(playerSelection3, computerSelection3);
+const round4 = playRound(playerSelection4, computerSelection4);
+const round5 = playRound(playerSelection5, computerSelection5);
