@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f2eb;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.container.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.resultContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    /* gap: 30px */
+}
+
+.pointsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pointsPlayer, .pointsComputer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: solid black;
+    border-radius: 5px;
+    flex-basis: 300px
+}
