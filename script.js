@@ -1,5 +1,6 @@
 const resultDiv = document.querySelector('.result');
-
+const counterPlayer = document.querySelector('.counterPlayer');
+const counterComputer = document.querySelector('.counterComputer');
 const buttons = document.querySelectorAll('.btn');
 
 let resultPlayer = 0;
@@ -23,6 +24,8 @@ buttons.forEach( (button) => {
             resultDiv.textContent = `You Lost! ${computerSelection} beats ${playerSelection}`;
             resultComputer++;
         }
+
+        updateResult();
     })
 })
 
@@ -43,4 +46,9 @@ function playRound (player, computer) {
     } else {
         return -1;
     }
+};
+
+function updateResult() {
+    counterPlayer.textContent = resultPlayer;
+    counterComputer.textContent = resultComputer;
 };
