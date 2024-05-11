@@ -26,6 +26,7 @@ buttons.forEach( (button) => {
         }
 
         updateResult();
+        checkWinner();
     })
 })
 
@@ -51,4 +52,20 @@ function playRound (player, computer) {
 function updateResult() {
     counterPlayer.textContent = resultPlayer;
     counterComputer.textContent = resultComputer;
+};
+
+function checkWinner() {
+    if (resultPlayer == 5) {
+        resultDiv.textContent = "Congratulations! You Win the Game!";
+        disableButtons();
+    } else if (resultComputer == 5) {
+        resultDiv.textContent = "Hard Luck! Computer Wins the Game!";
+        disableButtons();
+    }
+};
+
+function disableButtons() {
+    buttons.forEach( (button) => {
+        button.disabled = true;
+    });
 };
