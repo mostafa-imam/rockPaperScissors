@@ -5,8 +5,9 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0f2eb;
+    font-family: "VT323", monospace;
+    font-style: normal;
+    background-color: #53777a;
 }
 
 .container {
@@ -14,32 +15,68 @@ body {
     margin: 0 auto;
 }
 
-.container.heading {
+.heading {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 150px;
+    margin-bottom: 50px;
+    background-color: #1e484bb3;
+    box-shadow: 1px 1px 1px black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
 }
 
 .resultContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.btnContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-    /* gap: 30px */
+.rinseAndRepeat {
+    margin-top: 30px;
+    padding: 5px;
+    background-color: rgb(81, 141, 145);
+    font-size: 1.3rem;
+}
+
+.rinseAndRepeat:hover {
+    margin-top: 30px;
+    padding: 5px;
+    background-color: #7bb3b7;
+    font-size: 1.3rem;
+    box-shadow: 3px 1px 1px black;
+}
+
+.pointsComputer > img {
+    max-width: 70px;
+    height: auto;
+}
+
+.pointsPlayer > img {
+    max-width: 70px;
+    height: auto;
+}
+
+.enlarge {
+    transform: scale(1.2);
+    transition: transform 0.1s ease;
 }
 
 .pointsContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
 }
 
 .pointsPlayer, .pointsComputer {
@@ -48,7 +85,40 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: solid black;
-    border-radius: 5px;
-    flex-basis: 300px
+    flex-basis: 200px;
+    border: solid rgba(0, 0, 0, 0.336);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.089);
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.counterComputer, .counterPlayer {
+    font-size: 1.3rem;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    height: 300px;
+}
+
+.btnContainer > img {
+    box-sizing: content-box;
+    max-width: 150px;
+    max-height: auto;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.btnContainer > img:hover {
+    box-sizing: content-box;
+    max-width: 150px;
+    height: auto;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #648285;
+    box-shadow: 3px 3px 3px #0000009c;
 }
